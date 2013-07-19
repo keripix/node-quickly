@@ -1,0 +1,13 @@
+{
+    "src_files": [
+        "index.js",
+        "libs/**/*.js",
+        "tests/**/*Spec.js"
+    ],
+    "launch_in_dev": ["Node"],
+    "launchers": {
+        "Node": {
+            "command": "jasmine-node tests"
+        }
+    }
+}
