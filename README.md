@@ -25,3 +25,7 @@ To remove a key:
 To list all of keys that have been recorded so far:
 
 > $ q -l
+
+## Install
+
+> $ npm install -g node-quickly
