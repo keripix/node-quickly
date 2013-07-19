@@ -22,4 +22,11 @@ describe("Key Handler", function(){
             "c": "/path/to/c"
         });
     });
+
+    it("Should update the key and path", function(){
+        expect(keyHandler.get("a")).toEqual("/path/to/a");
+
+        keyHandler.save("a", "/path/to/aa");
+        expect(keyHandler.get("a")).toEqual("/path/to/aa");
+    });
 });
