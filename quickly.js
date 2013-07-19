@@ -1,6 +1,7 @@
 var keyHandler = require("./libs/keyHandler");
 
 module.exports = function(opt){
+  console.log(opt);
   if (opt.add){
     keyHandler.save(opt.add, opt[0]);
   } else if (opt.remove){

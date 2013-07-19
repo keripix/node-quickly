@@ -8,17 +8,17 @@ module.exports = {
   },
   add: {
     abbr: "a",
-    string: "-a KEY PATH",
+    metavar: "KEY PATH",
     help: "Add the given key and path to the quickly records"
   },
   remove: {
     abbr: "r",
-    string: "-r KEY",
+    metavar: "KEY",
     help: "Remove the given key fromt the quickly records"
   },
   edit: {
     abbr: "e",
-    string: "-e KEY",
+    metavar: "KEY PATH",
     help: "Set a new path to the given key"
   },
   list: {
