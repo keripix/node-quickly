@@ -7,7 +7,7 @@
     "launch_in_dev": ["Node"],
     "launchers": {
         "Node": {
-            "command": "jasmine-node tests"
+            "command": "mocha tests/**/*Spec.js"
         }
     }
 }

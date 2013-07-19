@@ -19,5 +19,8 @@
   "dependencies": {
     "nomnom": "~1.6.1",
     "configstore": "~0.1.2"
+  },
+  "devDependencies": {
+    "expect.js": "~0.2.0"
   }
 }
