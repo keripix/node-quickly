@@ -2,7 +2,10 @@
   "name": "node-quickly",
   "version": "0.0.1",
   "description": "Quickly change directory on the console",
-  "main": "index.js",
+  "main": "quickly.js",
+  "bin": {
+    "q": "./bin/q.js"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
