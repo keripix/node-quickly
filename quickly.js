@@ -1,14 +1,17 @@
 var keyHandler = require("./libs/keyHandler");
 
 module.exports = function(opt){
-  console.log(opt);
   if (opt.add){
-    keyHandler.save(opt.add, opt[0]);
+    keyHandler.save(opt.add, opt.key);
   } else if (opt.remove){
-    keyHandler.remove(opt.remove);
+    keyHandler.delete(opt.remove);
   } else if (opt.edit){
-    keyHandler.edit(opt.edit, opt[0]);
+    keyHandler.edit(opt.edit, opt.key);
   } else if (opt.list){
     keyHandler.list();
+  } else {
+    if (opt.key){
+      keyHandler.get(key);
+    }
   }
 };
