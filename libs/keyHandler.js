@@ -14,6 +14,21 @@ exports.save = function(key, path){
   }
 };
 
+exports.add = function(key, path){
+  if (conf.get(key)){
+    console.error(key + " exists");
+    return;
+  }
+
+  this.save(key, path);
+};
+
+exports.edit = function(key, path){
+  if (conf.get(key)){
+    this.save(key, path);
+  }
+};
+
 exports.get = function(key){
   return conf.get(key);
 };

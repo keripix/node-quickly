@@ -3,8 +3,8 @@ var keyHandler = require("./../libs/keyHandler"),
     expect = require("expect.js");
 
 describe("Key Handler", function(){
-  it("Should save the key and the path", function(){
-    keyHandler.save("a", process.cwd());
+  it("Should add the key and the path", function(){
+    keyHandler.add("a", process.cwd());
     expect(keyHandler.get("a")).to.equal(process.cwd());
   });
 
@@ -14,9 +14,9 @@ describe("Key Handler", function(){
   });
 
   it("Should list all of the keys", function(){
-    keyHandler.save("a", process.cwd());
-    keyHandler.save("b", process.cwd());
-    keyHandler.save("c", process.cwd());
+    keyHandler.add("a", process.cwd());
+    keyHandler.add("b", process.cwd());
+    keyHandler.add("c", process.cwd());
 
     expect(keyHandler.list()).to.eql({
       "a": process.cwd(),
@@ -32,7 +32,7 @@ describe("Key Handler", function(){
   });
 
   it("Should resolve the path that was mapped to a key", function(){
-    keyHandler.save("a", ".");
+    keyHandler.add("a", ".");
     expect(keyHandler.get("a")).to.equal(process.cwd());
     keyHandler.delete("a");
   });
