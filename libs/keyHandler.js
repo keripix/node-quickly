@@ -1,8 +1,17 @@
 var Configstore = require("configstore"),
-    conf = new Configstore("quickly");
+    conf = new Configstore("quickly"),
+    fs = require("fs");
+
+function resolvePath(path){
+  return fs.realpathSync(path);
+}
 
 exports.save = function(key, path){
-  conf.set(key, path);
+  var resolved = resolvePath(path);
+
+  if (resolved){
+    conf.set(key, resolved);
+  }
 };
 
 exports.get = function(key){
