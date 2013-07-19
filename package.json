@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Quickly change directory on the console",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/keripix/node-quickly"
@@ -13,5 +12,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/keripix/node-quickly/issues"
+  },
+  "dependencies": {
+    "nomnom": "~1.6.1",
+    "configstore": "~0.1.2"
   }
 }
