@@ -6,6 +6,10 @@ module.exports = {
       return "quickly version 0.0.1";
     }
   },
+  key: {
+    position: 0,
+    help: "If supplied, change directory to the path that was mapped to this key"
+  },
   add: {
     abbr: "a",
     metavar: "KEY PATH",
