@@ -12,3 +12,7 @@ exports.get = function(key){
 exports.delete = function(key){
     conf.del(key);
 };
+
+exports.list = function(){
+    return conf.all;
+};

@@ -10,4 +10,16 @@ describe("Key Handler", function(){
         keyHandler.delete("a");
         expect(keyHandler.get("a")).toBeUndefined();
     });
+
+    it("Should list all of the keys", function(){
+        keyHandler.save("a", "/path/to/a");
+        keyHandler.save("b", "/path/to/b");
+        keyHandler.save("c", "/path/to/c");
+
+        expect(keyHandler.list()).toEqual({
+            "a": "/path/to/a",
+            "b": "/path/to/b",
+            "c": "/path/to/c"
+        });
+    });
 });
