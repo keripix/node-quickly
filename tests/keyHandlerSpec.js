@@ -29,4 +29,10 @@ describe("Key Handler", function(){
         keyHandler.save("a", "/path/to/aa");
         expect(keyHandler.get("a")).toEqual("/path/to/aa");
     });
+
+    it("Should be able to remove all of the saved path", function(){
+        keyHandler.removeAll();
+
+        expect(keyHandler.list()).toEqual({});
+    });
 });

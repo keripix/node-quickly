@@ -16,3 +16,7 @@ exports.delete = function(key){
 exports.list = function(){
     return conf.all;
 };
+
+exports.removeAll = function(){
+    conf.all = {};
+};
