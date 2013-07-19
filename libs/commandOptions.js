@@ -1,6 +1,7 @@
 module.exports = {
   version: {
     abbr: "v",
+    flag: true,
     callback: function(){
       return "quickly version 0.0.1";
     }
@@ -11,8 +12,8 @@ module.exports = {
     help: "Add the given key and path to the quickly records"
   },
   remove: {
-    abbr: "rm",
-    string: "-rm KEY",
+    abbr: "r",
+    string: "-r KEY",
     help: "Remove the given key fromt the quickly records"
   },
   edit: {
@@ -21,7 +22,8 @@ module.exports = {
     help: "Set a new path to the given key"
   },
   list: {
-    abbr: "ls",
+    abbr: "l",
+    flag: true,
     help: "List all the available keys and the responding paths"
   }
 };
