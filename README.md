@@ -4,6 +4,8 @@ A port of my [quickly](https://github.com/keripix/quickly) command line utility 
 
 Quickly allows you to change directory (`cd`) without typing the whole path of that directory. Instead, you just type the key which has been mapped to a directory.
 
+Currently only supports **bash**.
+
 ![](pics/quickly.jpeg)
 
 ## Usage
