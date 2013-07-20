@@ -18,6 +18,8 @@ module.exports = function(opt){
   } else {
     if (opt.key){
       keyHandler.get(opt.key);
+    } else {
+      console.error("Command not found".bold.red);
     }
   }
 };
