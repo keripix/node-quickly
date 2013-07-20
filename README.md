@@ -32,6 +32,24 @@ To list all of keys that have been recorded so far:
 
 > $ npm install -g node-quickly
 
+After that please follow the instruction printed on your console. I haven't been able to figure out a simple way for that last step.
+
+If you've missed the last instruction, please type this function inside your `~/.bashrc` file:
+
+    q(){
+      res=$(q.js $@)
+
+      if [ -d "$res" ]; then
+          cd $res
+      else
+          echo -e "$res"
+      fi
+    }
+
+After that, you need to:
+
+    source ~/.bashrc
+
 ## Credits
 
 (c) 2013 Akbar Hidayat. MIT License
