@@ -1,5 +1,11 @@
 var keyHandler = require("./libs/keyHandler");
 
+function listKeys(records){
+  for (var key in records){
+    console.log(key.bold.yellow + "\t" + records[key].cyan);
+  }
+}
+
 module.exports = function(opt){
   if (opt.add){
     keyHandler.add(opt.add, opt.key);
@@ -8,7 +14,7 @@ module.exports = function(opt){
   } else if (opt.edit){
     keyHandler.edit(opt.edit, opt.key);
   } else if (opt.list){
-    keyHandler.list();
+    listKeys(keyHandler.list());
   } else {
     if (opt.key){
       keyHandler.get(opt.key);
