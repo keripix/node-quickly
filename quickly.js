@@ -20,7 +20,7 @@ module.exports = function(opt){
       var path = keyHandler.get(opt.key);
 
       if (path){
-        return path;
+        console.log(path);
       } else {
         console.log("Key cannot be found".bold.red);
       }
