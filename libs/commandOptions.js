@@ -1,9 +1,11 @@
+var VERSION = "0.1.1";
+
 module.exports = {
   version: {
     abbr: "v",
     flag: true,
     callback: function(){
-      return "quickly version 0.0.1";
+      return "quickly version " + VERSION;
     }
   },
   key: {
