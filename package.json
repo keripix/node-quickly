@@ -1,6 +1,6 @@
 {
   "name": "node-quickly",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Quickly change directory on the console",
   "keywords": [
     "cd",
