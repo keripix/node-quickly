@@ -9,10 +9,11 @@
   ],
   "main": "quickly.js",
   "bin": {
-    "q.js": "./bin/q.js",
-    "q": "./bin/q"
+    "q.js": "./bin/q.js"
   },
-  "scripts": {},
+  "scripts": {
+    "postinstall": "node libs/friendlyEcho.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/keripix/node-quickly"
