@@ -31,3 +31,7 @@ To list all of keys that have been recorded so far:
 ## Install
 
 > $ npm install -g node-quickly
+
+## Credits
+
+(c) 2013 Akbar Hidayat. MIT License
