@@ -17,7 +17,13 @@ module.exports = function(opt){
     listKeys(keyHandler.list());
   } else {
     if (opt.key){
-      keyHandler.get(opt.key);
+      var path = keyHandler.get(opt.key);
+
+      if (path){
+        return path;
+      } else {
+        console.log("Key cannot be found".bold.red);
+      }
     } else {
       console.error("Command not found".bold.red);
     }

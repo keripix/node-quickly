@@ -9,7 +9,8 @@
   ],
   "main": "quickly.js",
   "bin": {
-    "q": "./bin/q.js"
+    "q.js": "./bin/q.js",
+    "q": "./bin/q"
   },
   "scripts": {},
   "repository": {
