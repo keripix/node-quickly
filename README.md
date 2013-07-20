@@ -10,7 +10,7 @@ Quickly allows you to change directory (`cd`) without typing the whole path of t
 
 To map a path to a key:
 
-> $ q node /path/to/my/node/projects
+> $ q -a node /path/to/my/node/projects
 
 Now, to go to `/path/to/my/node/projects`:
 
