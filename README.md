@@ -48,6 +48,11 @@ After that, you need to:
 
     source ~/.bashrc
 
+## TODO
+
+- Code Completion
+- Better command options
+
 ## Credits
 
 (c) 2013 Akbar Hidayat. MIT License
