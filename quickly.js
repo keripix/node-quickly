@@ -1,4 +1,13 @@
-var keyHandler = require("./libs/keyHandler");
+var keyHandler = require("./libs/keyHandler"),
+    omelette = require("omelette");
+
+var complete = omelette("q.js <key>");
+
+complete.on("key", function(){
+  return this.reply(keyHandler.listKeys());
+});
+
+complete.init();
 
 function listKeys(records){
   for (var key in records){
