@@ -59,5 +59,17 @@ describe("Key Handler", function(){
 
       keyHandler.delete("a");
     });
+
+    it("Should return the keys", function(){
+      keyHandler.add("b", process.cwd());
+      keyHandler.add("c", process.cwd());
+
+      var keys = keyHandler.listKeys();
+
+      expect(keys).to.contain("a");
+      expect(keys).to.contain("b");
+      expect(keys).to.contain("c");
+      expect(keys).to.have.length(3);
+    });
   });
 });

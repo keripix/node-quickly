@@ -41,6 +41,10 @@ exports.list = function(){
   return conf.all;
 };
 
+exports.listKeys = function(){
+  return Object.keys(conf.all);
+};
+
 exports.removeAll = function(){
   conf.all = {};
 };
