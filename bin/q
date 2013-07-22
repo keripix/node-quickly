@@ -1,0 +1,9 @@
+q(){
+    res=$(q.js $@)
+
+    if [ -d "$res" ]; then
+        cd $res
+    else
+        echo -e "$res"
+    fi
+}
