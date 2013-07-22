@@ -40,22 +40,6 @@ This feature is still in development. Currently, I'm using [omelette](https://gi
 
 After that please follow the instruction printed on your console. I haven't been able to figure out a simple way for that last step.
 
-If you've missed the last instruction, please type this function inside your `~/.bashrc` file:
-
-    q(){
-      res=$(q.js $@)
-
-      if [ -d "$res" ]; then
-          cd $res
-      else
-          echo -e "$res"
-      fi
-    }
-
-After that, you need to:
-
-    source ~/.bashrc
-
 ## Testing
 
 To run the test, you need to have **testem** and **mocha** installed.
