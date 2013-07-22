@@ -3,7 +3,7 @@ var exec = require("child_process").exec;
 
 exec("which q", function(err, stdout, stderr){
   var qBin = stdout;
-  exec("q --completion >> ~/q.completion.sh", function(err, stdout, stderr){
+  exec("./bin/q.js --completion > ~/q.completion.sh", function(err, stdout, stderr){
     console.log("Firstly, please remove any q related function from your ~/.bashrc file".bold.yellow);
     console.log("Then, please add these two on your ~/.bashrc file\n".bold.yellow);
 
