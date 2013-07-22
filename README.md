@@ -30,6 +30,10 @@ To list all of keys that have been recorded so far:
 
 > $ q -l
 
+## Auto Completion Feature
+
+This feature is still in development. Currently, I'm using [omelette](https://github.com/f/omelette) to implement this feature. However, I'm having trouble writing the results from omelette to the bash function.
+
 ## Install
 
 > $ npm install -g node-quickly
@@ -51,6 +55,18 @@ If you've missed the last instruction, please type this function inside your `~/
 After that, you need to:
 
     source ~/.bashrc
+
+## Testing
+
+To run the test, you need to have **testem** and **mocha** installed.
+
+> $ npm install -g testem
+
+> $ npm install -g mocha
+
+And then just run *testem* from the projet root directory.
+
+> $ testem
 
 ## TODO
 
