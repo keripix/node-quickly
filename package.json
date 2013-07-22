@@ -9,6 +9,7 @@
   ],
   "main": "quickly.js",
   "bin": {
+    "q": "./bin/q",
     "q.js": "./bin/q.js"
   },
   "scripts": {
