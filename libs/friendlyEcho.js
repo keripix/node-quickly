@@ -12,4 +12,5 @@ console.log("Please place this inside your ~/.bashrc file:\n".bold.yellow+
 
 console.log("If you want to enable autocompletion, please run these last two steps:\n\n".bold.yellow+
 "q.js --completion >> ~/q.completion.sh\n"+
-"echo 'source ~/q.completion.sh' >> ~/.bashrc\n");
+"echo 'source ~/q.completion.sh' >> ~/.bashrc\n\n"+
+"Don't forget to source ~/.bashrc afterward\n".bold.yellow);

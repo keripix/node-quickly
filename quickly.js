@@ -4,7 +4,7 @@ var keyHandler = require("./libs/keyHandler"),
 var complete = omelette("q.js <key>");
 
 complete.on("key", function(){
-  return this.reply(keyHandler.listKeys());
+  console.log(this.reply(keyHandler.listKeys()));
 });
 
 complete.init();
